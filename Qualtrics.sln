@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualtrics.Automation", "Qualtrics.Automation\Qualtrics.Automation.csproj", "{11909394-C913-464A-94E0-BF689544CEE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{385BEC0D-A000-40C3-B45C-BA6D48828B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualtrics.Core", "Qualtrics.Core\Qualtrics.Core.csproj", "{FF1B5B46-9FA5-4AD5-8774-EEDC14799F85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualtrics.Api", "Qualtrics.Api\Qualtrics.Api.csproj", "{03F04868-F4AF-4083-8E29-3919E54E4639}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11909394-C913-464A-94E0-BF689544CEE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11909394-C913-464A-94E0-BF689544CEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11909394-C913-464A-94E0-BF689544CEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11909394-C913-464A-94E0-BF689544CEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1B5B46-9FA5-4AD5-8774-EEDC14799F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1B5B46-9FA5-4AD5-8774-EEDC14799F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1B5B46-9FA5-4AD5-8774-EEDC14799F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1B5B46-9FA5-4AD5-8774-EEDC14799F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F04868-F4AF-4083-8E29-3919E54E4639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F04868-F4AF-4083-8E29-3919E54E4639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F04868-F4AF-4083-8E29-3919E54E4639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F04868-F4AF-4083-8E29-3919E54E4639}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF1B5B46-9FA5-4AD5-8774-EEDC14799F85} = {385BEC0D-A000-40C3-B45C-BA6D48828B71}
+		{03F04868-F4AF-4083-8E29-3919E54E4639} = {385BEC0D-A000-40C3-B45C-BA6D48828B71}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79D77E82-9BA0-413D-B0FE-8DDD3E437437}
+	EndGlobalSection
+EndGlobal
