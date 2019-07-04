@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Qualtrics.Api.Services
+namespace Qualtrics.Api.Services.Interfaces
 {
-    class LegacyResponseExportService
+    internal interface IXmDirectoryContactInMailingListService
     {
     }
 }

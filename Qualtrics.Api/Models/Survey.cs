@@ -20,17 +20,11 @@ namespace Qualtrics.Api.Models
         public Dictionary<string, SurveyQuestion> Question { get; set; }
         public Dictionary<string, SurveyColumn> ExportColumnMap { get; set; }
         public Dictionary<string, SurveyBlock> Blocks { get; set; }
-        public IEnumerable<Flow> Flow { get; set; }
+        public IEnumerable<FlowElement> Flow { get; set; }
         public IEnumerable<EmbeddedDataEntry> EmbeddedData { get; set; }
         public Comment Comment { get; set; }
         public Dictionary<string, LoopAndMerge> LoopAndMerge { get; set; }
         public ResponseCounts ResponseCounts { get; set; }
-    }
-
-    public class ExpirationSpan
-    {
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
     }
 
     public class SurveyQuestion
@@ -55,6 +49,20 @@ namespace Qualtrics.Api.Models
     public class QuestionValidation
     {
         public bool DoesForceResponse { get; set; }
+        public ValidationSettings Settings { get; set; }
+    }
+
+    public class QuestionDataVisibility
+    {
+        public bool Private { get; set; }
+        public bool Hidden { get; set; }
+    }
+
+    public class ValidationSettings
+    {
+        public string ForceResponse { get; set; }
+        public string ForceResponseType { get; set; }
+        public string Type { get; set; }
     }
 
     public class QuestionChoice
@@ -64,6 +72,7 @@ namespace Qualtrics.Api.Models
         public string ChoiceText { get; set; }
         public string ImageDescription { get; set; }
         public string VariableName { get; set; }
+        public string Display { get; set; }
         public bool Analyze { get; set; }
     }
 
@@ -79,16 +88,12 @@ namespace Qualtrics.Api.Models
         public IEnumerable<BlockElement> Elements { get; set; }
     }
 
-    public class BlockElement
+    public class FlowElement
     {
-        public string Type { get; set; }
-        public string QuestionId { get; set; }
-    }
-
-    public class Flow
-    {
+        public string FlowId { get; set; }
         public string Id { get; set; }
         public string QuestionId { get; set; }
+        public string Type { get; set; }
     }
 
     public class EmbeddedDataEntry
